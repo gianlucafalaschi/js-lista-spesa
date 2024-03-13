@@ -17,7 +17,14 @@ const list = [
 
 // selezionare elemento lista ul in html
 let ulList = document.querySelector('ul.list');
-console.log(ulList);
+//console.log(ulList);
 // CON CICLO FOR
 // per ogni elemento dell'array
-    //stampare in html l'elemento
+for( let i = 0; i < list.length; i++) {
+    let thisElement = list[i];
+    //console.log(thisElement);
+     //stampare in html l'elemento
+     ulList.innerHTML += `<li>${thisElement}</li>`
+}
+
+   
